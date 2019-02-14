@@ -25,7 +25,7 @@ dependencies {
 
 # AnnotationProcessor和Provided区别
 
-* **AnnotationProcessor**只在编译的时候执行依赖的库，但是库最终不打包到apk中，编译库中的代码没有直接使用的意义，也没有提供开放的api调用，最终的目的是得到编译库中生成的文件，供我们调用
+* **AnnotationProcessor**只在编译的时候执行依赖的库，但是库最终不打包到apk中，编译库中的代码没有直接使用的意义，也没有提供开放的api调用，最终的目的是得到编译库中生成的文件，供我们调用。
 * **Provided**虽然也是编译时执行，最终不会打包到apk中，但是跟`AnnotationProcessor`有着根本的不同。
 
 ```
